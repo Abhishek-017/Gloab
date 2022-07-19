@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+   
 }
+
 
 .top{
     background-color: #0f5349;
@@ -41,7 +43,7 @@ a img{
 .dec{
     background-color: #9dcff0;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 16x;
     font-family:Arial, Helvetica, sans-serif;
 }
 .dec img{
@@ -58,6 +60,11 @@ a img{
     color: #fff;
     padding: 10px 13px;
     text-decoration: none;
+}
+.dec p a:hover{ 
+    transition:0.5s ;
+    background-color:deepskyblue ;
+    color: #000;
 }
 nav {
     background-color: #0f5349;
@@ -148,6 +155,7 @@ input {
     text-transform: capitalize;
     background-color: transparent;
     border: 2px solid #000;
+    
 }
 input[type="text"]{
     line-height: 1.7em;
@@ -156,32 +164,38 @@ input[type="text"]{
     
 }
 
-.form button{background-color: #0f5349;
-    font-size: 20px;
+.form button{
+    background-color: #0f5349;
+    font-size: 24px;
     padding:  15px;
     color: #fff;
     text-transform: capitalize;
     border: 1px solid #fff;
     width: 80%;
+   
 
+}
+.form button:hover{   
+    font-size: 27px;
+    color: #fff;
+    text-shadow:1px 2px  #000;
 }
 aside{
     background-color: #0f5349;
     color: #fff;
     text-transform: capitalize;
-   display: block;
+     display: flex;
+   width: 100%;
    padding: 45px 20px;
+
     
 }
-.set{
-    display: inline-block; 
+.set {
+    
+   
 }
 
- aside img{height: 90px; 
-    width: 65px; 
-    padding-top: 30px;
-    border-radius: 50%;
-}
+
 article{
     background-color: #0f5349;
 }
@@ -189,8 +203,9 @@ article{
     background-color:rgb(255, 255, 255);
     text-align: center;
     padding-top: 50px;
-  border: rgb(255, 255, 255) solid;
-  border-radius: 0px 0px 40% 40%;
+  border: rgb(255, 255, 255);
+  border-radius: 0% 0% 100% 100%;
+  border-top-width: 50px;
     text-align: center;
     display: block;
 }
@@ -293,13 +308,21 @@ article{
         50%{content: ;}
         75%{content: "विद्यालय";}
         100%{content: "ਸਕੂਲ";}
-     }*/
+     }
+      aside img{height: 90px; 
+    width: 65px; 
+    padding-top: 30px;
+    border-radius: 50%;
+}
+     */
      
      @media (max-width:980px) {.top{
-         height:120px;
+         height:130px;
          padding: 20px 30px;
-         }}
-
+         } 
+         aside{
+          
+              flex:none;}}
     @media (max-width:980px) {
         .rgt {
             position:absolute;
@@ -319,12 +342,13 @@ article{
 
          @media(max-width:980px) {.dec p a{
             position: absolute;
-            top: 291px;
+            top: 302px;
             transform: translateX(50%);
             right:50%;
-            
+         font-size:80%;
             
         }}
+
         @media (max-width:980px) {.dec{
             height: 205px;
         }}
@@ -337,7 +361,12 @@ article{
             transform: translateX(50%);
            right:50%;
             position: absolute;
-            }} 
+            }
+        .form2{
+        
+           padding-left: 15%;
+            border: 2px solid #fff;
+        }} 
             /*
         @media (max-width:1200px) {section img{
             height: auto; 
@@ -397,8 +426,8 @@ article{
                flex-wrap: nowrap;
              }}
              @media (max-width:980px){.form
-                {
-                    padding-left: 16%;
+                {    padding:5%;
+                  padding-top: 0%; 
 
                 }
              }
@@ -425,17 +454,26 @@ article{
                 width:100%;
                 height: auto;
                 }
-            }
+                .arti{border-radius: 0% 0% 15% 15%;
+            }}
             
-
             @media (max-width:980px){.fb{
-            width:100%;}
+            width:100%;
+            height: auto;
+            margin-top: 0px;}
             .ql{
                 width:100%;
+                height: auto;
+                margin-top: 0px;
             }
             .us{
                 width:100%;
-            }} 
+                height: auto;
+                margin-top: 0px;
+            }
+            input[type="text"]{
+               
+                margin-bottom: 15px;}} 
            
 
     .flex{
@@ -477,17 +515,29 @@ article{
            flex-wrap: nowrap;
            width: 100%;
           } 
+          html{
+            margin: 0%;
+            padding: 0%;
+          }
         }
-  .myfoot{
- background-color: #0f5349;
- text-align: center;
- color: #ffffff;
- font-family:Arial, Helvetica, sans-serif;
- font-size: 14px;
-padding: 12px;
-font-weight: 300;
+     .myfoot{
+      background-color: #0f5349;
+      text-align: center;
+       color: #ffffff;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding: 12px;
+       font-weight: 300;
       }
-            
+      .fa-globe{
+              font-size:6.4vw; 
+              background-color: #fff;
+               color:#0f5349;
+               border-radius: 50%; 
+              }
+
+             
+
             /*section img{
                 padding: 85px 35px;
              }
@@ -519,4 +569,7 @@ font-weight: 300;
         width: 100%;}}
       @media (max-width:980px){section{
         height:auto;
-        width: 100%;}}
+        width: 100%;}
+      }
+
+       
